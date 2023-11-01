@@ -31,3 +31,12 @@ client.on('messageCreate', (message) => {
 });
 
 client.login(token);
+
+function pingEndpoint() {
+    setInterval(() => {
+        https.get('https://discord-bot-tau-woad.vercel.app/ping', (res) => {
+        });
+    }, 2 * 60 * 1000);
+}
+
+pingEndpoint();
