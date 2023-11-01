@@ -5,7 +5,8 @@ const client = new Client({
         GatewayIntentBits.Guilds,
         GatewayIntentBits.GuildMessages,
         GatewayIntentBits.MessageContent
-    ]
+    ],
+    keepAlive: true
 })
 
 const token = process.env.DISCORD_BOT_TOKEN;
